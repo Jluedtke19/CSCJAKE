@@ -5,7 +5,7 @@ int main(int argc, char** argv){
   int i = 1;
   
   while(scanf("%c", &c ) !=EOF){
-    if( 5 % i == 0 ){
+    if( i % 5 == 0 ){
       i++;
       printf("%c", c);
       printf("%c", 32);
