@@ -5,7 +5,7 @@ int main(int argc, char** argv){
   
   while(scanf("%c", &c ) != EOF){
     if((c + 4) > 90){
-      c = 64 +  (c-90);
+      c = 64 +  (c-86);
     }
     else{
       c += 4;

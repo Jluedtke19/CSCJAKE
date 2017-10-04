@@ -16,10 +16,10 @@ int main(int argc, char** argv){
   int e = points[4] - points[0];
   int f = points[5] - points[1];
   
-  int s = ((d*e) -(b*f))/((a*d)-(b*c));
-  int t = ((a*f)-(c*e))/((a*d)-(b*c));
+  double s = (((d*e) -(b*f))/((a*d)-(b*c)));
+  double t = (((a*f)-(c*e))/((a*d)-(b*c)));
   
-  if( s<=1 & s >= 0  & t<=1 & t >= 0){
+  if( (s<=1 && s >= 0)  && (t<=1 && t >= 0)){
     printf("The lines intersect");
   }
   else{
