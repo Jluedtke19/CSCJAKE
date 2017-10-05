@@ -1,0 +1,24 @@
+What programming language(s)are used for?
+Buisness: COLBOL, PL/I-kinda
+Scientific Applications: ALGOL, PL/I
+Artificial Intelligence:LISP, Perl
+Systems Programming:C, Ada
+Web Software:Java, Perl- as a interface, JavaScript, PHP, JSP
+Other: Text Processing- SNOBOl
+
+What did the most prevalent programming languages evolve from?
+C- ALGOL, B
+C++- C, B, ALGOL
+C#- Java
+Fortran- Original language
+LISP- Original Language
+Java- C++, C, ALGOL
+JavaScript- Perl, awk, SNOBOL
+Python- MODULA, Pascal, ALGOL
+Ruby- Perl, Smalltalk
+
+What was wrong with machine code?
+	Poor readabliity
+	Poor modifiablity
+	Expression coding was tedious
+	Machine deficiencies, no indexing or floor point

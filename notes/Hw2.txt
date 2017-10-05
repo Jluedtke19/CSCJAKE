@@ -1,0 +1,11 @@
+ How are semantics/syntax, related to lexeme/token?
+	Syntax is like lexeme's because it is what is written,
+		it is the words used to define a program
+	Semantics are like tokens because they explain what the,
+		syntax/lexeme do, what they mean
+What was the first context free language?
+	Backus Normal Form, invented by John Backus
+How are attribute values computed?
+	If inherited, tree is decoraoted top down. If synthesized, 
+		bottom-up. If both, use a combination of top and bottom-up
+		
