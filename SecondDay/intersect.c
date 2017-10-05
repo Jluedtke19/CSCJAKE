@@ -10,6 +10,7 @@ int main(int argc, char** argv){
      }
   //printf("%d ", points[2]);
   int a = points[2] - points[0];
+  printf("%d", a);
   int b = points[4] - points[6];
   int c = points[3] - points[1];
   int d = points[5] - points[7];
@@ -18,6 +19,8 @@ int main(int argc, char** argv){
   
   double s = (((d*e) -(b*f))/((a*d)-(b*c)));
   double t = (((a*f)-(c*e))/((a*d)-(b*c)));
+  printf("%f", &s);
+  printf("%f", &t);
   
   if( (s<=1 && s >= 0)  && (t<=1 && t >= 0)){
     printf("The lines intersect");
