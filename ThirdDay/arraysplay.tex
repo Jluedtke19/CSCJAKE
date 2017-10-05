@@ -1,3 +1,60 @@
+\documentclass[twoside]{article}
+\title{Lesson with Arrays and Pointers}
+\author{CSC315 Programming Language Concepts}
+\date{04 October 2017}
+\usepackage{listings}
+\lstset{language=c}
+\lstset{numbers=left, showspaces=false, showstringspaces=false}
+
+\newenvironment{answer}
+  { \vspace*{12pt}
+
+    \rule{12cm}{0.02cm}
+
+    \vspace*{12pt}
+
+    \hspace*{1.0cm}
+    \begin{minipage}{10cm}}
+  {\end{minipage} \vspace*{12pt}}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+  \item What does the statement \lstinline@int* np = &n;@ accomplish?
+
+  \begin{answer}
+    It assigns the address of a variable named \lstinline@n@ to 
+    a variable named \lstinline@np@.
+    \end{answer}
+
+	\item How does an unsigned long differ from a normal one?
+	
+	\begin{answer}
+		Unsigned longs don't store negative numbers, 
+		but can store larger positive numbers.
+		\end{answer}
+	\begin{enumerate}
+  \item Why do the fibonacci addresses go up by 4s?
+
+  \begin{answer}
+	Because they are 4 bytes large.
+    \end{answer}
+	
+	\item What happens when you printf the address of a array where no number
+	is stored?
+	
+	\being{answer}
+	It makes a really large number
+	\end{answer}
+	
+	
+  \end{enumerate}
+  
+
+\section{Source code}
+
+\begin{lstlisting}{}
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -120,3 +177,7 @@ int main( int argc, char** argv ) {
       (unsigned long) &oneIntegerArray[0] );
   
 } // main( int, char** )
+
+  \end{lstlisting}
+
+\end{document}
