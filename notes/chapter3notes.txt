@@ -1,0 +1,20 @@
+elemts of grammar: terminal and non-terminal symbols
+special non-terminal: start symbols
+recursive rule: non- terminal appears in LHS and RHS
+"->" symbol: read as "derives"
+definition: LHS (abstracction that is being defined) + RHS (sequence of tokens and references to definition)
+derivation: sequence of application of ruels
+sentntial form: s
+equence of tokens and references to definitions;
+
+Synonyms : defintion, rule, production
+	BNF, grammar
+	Sytax analyzer, parser
+
+extended BNF (EBNF)
+	(A) [] to indicate an optional elemnt
+	(B) {} to indicate an element that may be repeated 0. 1. or many times
+	(C) (||) to indicate a choice from a finite set
+	
+	
+Some grammars are ambiguos can created more than one parse tree per one grammar

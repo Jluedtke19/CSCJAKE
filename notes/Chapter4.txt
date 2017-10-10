@@ -1,0 +1,65 @@
+3 wyas to implement programming language
+	compilation- compiler tranlates programs in high language to machine code
+	pure interpretation-programs interpreted in their original form by software interpreter, javascript
+	hybrid implementation-translate programs in high level to intermediate forms, JIT java
+
+
+
+Compiler's parts
+	Frontend- create frontend with another program
+lexical analyzer(scanner) small scale names numeric literals, pattern matcher, gets lexemes and tokens- first take out comments and white space, automated
+Syntax analyzer(parser) deals with large scale constructs-expressions,statements,program units- automated, output from lexical is input to syntax
+	based on a formal description of the synatx in programs, most used is context free grammars or BNF backus naur form
+	2 goals of sytax analysis- first the syntax analyzer must check the input program to detemrine if syntactically correct,
+		, produce parse tree or structure of it
+		3 advantages, clear and concise for people and computers, direct basis for syntax analyzer
+		implementations are easy to maintain because of modularity
+	lexical seperated from syntax - simplicity, easier for syntax,|effiecient | portabilty
+		
+	Middleend
+Symbol table construction-
+optimizer - hard art and science
+	Backend
+code generation- specific to each hw architecture
+
+parsers: top down- built from root to leaves, bottom up- built from leaves to root
+recursive-descent parser- based on BNF(backus-naur form)description of the syntax language
+LL algorithms- parsing table and recursive-descent, work on the same subset of all context free grammars
+direct left recursion- left recursion, can be eliminated
+pairwise dijointness test- rquires the ability to compute a set based on the RHS of a nonterminal symbol
+left factoring- solves the problem of the pair-wise disjointness test
+shift-reduce algorithms- bottom up parsers, moves input(tokens) onto the parser's stack, reduce action replaces the handle(RHS) on top
+	of the stack by its LHS
+LR parsers- can be built for all programming languages, detect syntax errors as soon as it is possible in a left right scan,
+	LR grammars is a superset of the class arsable by LL parsers- many left recrusive grammars are LR, but none are LL
+hard to produce by hand
+	
+need to write assembly language by hand to optimize, no longer done- compilers too good
+
+How to write a compiler- by hand recursive descent, or a with a 
+compiler-compiler-table driven requires use of software to to make the table
+	recursive method for each rule(production) in language
+	
+silicon compiler- from hardware description language, make
+an integrated circuit
+
+language = machine, machine recgonizer of language and  parses it
+	regular language = finit state machine-no memory
+	context-free grammar = pushdown automatan- memory in form of a stack
+
+state diagram- directed graph, transition between states
+	
+
+parts of a finite state machine-
+	a finite set of symbols allowed in the input
+	a finite set of states, states a computer can be in
+	a table that tells us that when we are in states s and 
+		looking at input symbol i we should next move to state t
+	a state symbol, begin execution states
+	a set of final (accepting) states
+
+Variable - a named location in the computer's memory
+	can completely describe a variable with 6 attributes
+		name, address, type, value, scope-where allowed to refer to variable
+		, lifetime-born partway through execution and some die before end
+		
