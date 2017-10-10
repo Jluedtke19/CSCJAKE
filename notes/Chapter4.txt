@@ -58,8 +58,5 @@ parts of a finite state machine-
 	a state symbol, begin execution states
 	a set of final (accepting) states
 
-Variable - a named location in the computer's memory
-	can completely describe a variable with 6 attributes
-		name, address, type, value, scope-where allowed to refer to variable
-		, lifetime-born partway through execution and some die before end
+
 		

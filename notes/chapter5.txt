@@ -1,0 +1,55 @@
+programming languages are like von Neumann computer architecture- have memory and processor that
+	operates on memory
+
+case sensitivity- poor readability, some have others don'than
+
+Variable - a named location in the computer's memory, abstraction of memory cell
+	can completely describe a variable with 6 attributes
+		name- most have them- explicit heap-dyanic variables don't, address, type, value, 
+		scope-where allowed to refer to variable
+		, lifetime-born partway through execution and some die before end
+		
+aliases- more than one variable is used to access the same memory location, made with
+	pointers, reference variables, unions- used for memory reuse
+
+binding times- language design time, binds operator symbols to operations
+	language implementation time- bing fl. pt. type to represenation
+	compile time- variable to a type | compile time | load time- nonstatic variable to 
+	memory cell
+	static- in run time remains unchanged
+	dynamic-occurs in execution or changes in execution
+	
+Type bindings-static-
+	explicit declaration- program statement
+	implicit declaration - default mechanism, first appearance of variable
+dynamic type-
+	specified through assignment statement, flexible but high cost and type error detection
+	is difficult
+	
+variables by lifetime-
+	static- bound to memory cells before execution and stays
+	stack-dynamic- when declaration statements are used, good for recurion, overhead is bad though
+	explicit heap-dynamic- allocated and deallocated by explicit directives
+		referenced through pointers and references, dyanmic storage, but ineffieicient
+	implicit heap-dyanmic- allocation and deallocation by assignment, variables, flexible, but inefficient and loss of error detection
+	
+type checking - ensuring that operands of an operator are comapitble
+	A type error is the application of an operator to an operand of an inappropriate type
+	If all type bindings are static, nearly all type checking can be static
+	If type bindings are dynamic, type checking must be dynamic
+	
+strong typing languages - detect misuses of variables, many aren't java is also ada
+Type compatibility - two variables have compatible types if they are in either the same declaration or in declarations
+	that use the same type name
+	
+scope - range of statements hwere a variable is visible
+nonlocal- visible but not delcared there
+Static scope- based on prrogram text, must find declaration	
+	blocks-mehtod for making static scopes, for loop with int variables inside
+dynamic scope- calling sequences of porgram units, references are connected to declarations by searching subprogrmas
+	convient but poor readabliity
+	
+difference between scoop and lifetime- scope is where a variable can be accessed, lifetime is how long its valid or can be accessed	
+referencing environments- all names that are visiblein a statements
+variable initialization- binding a variable to a value at the time it is bound to storage
+	done on the declartion statement
