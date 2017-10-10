@@ -1,0 +1,25 @@
+Primitive data types- integer, exact reflection of the harward
+	floating point- model real numbers
+	decimal- stores fixed number of decimal digits, accurate but wastes memory
+	boolean- can be bits, but implemented as bytes
+	
+Character string types- values are sequence of characters
+	design issues - is it primitive or special, is length of objects static or dynamic
+
+primitive - ada, fortran, basic, SNOBOL
+not primitive - pascal, c and c++
+
+string length options - static-ada, cobol | limited dynamic length-c and c++ 
+	length indicated by null character, dynamic
+	
+Ordinal types- one in which the range of possible values can be easily associated 
+	with the set of positive integers
+	Enumeration types-one where user enumerates all possible values
+		aid readability- no need to code a color as number, compiler can check operations and ranges of values
+		
+arrays- homogeneous data which individual elemnts are identified by their position relative to the first
+	four types- static, fixed stack dynamic- range is bound, storage not really, stack-dynamic- range and storage dynanmic,
+	but fixed from then on heap-dynamic- subscript range and storage bindings are dynamic
+	
+Associative Arrays- unordered collection of data elements indexed by an equal number of values called keys
+Sets- a set is a type of variable that can store unordered collections of distinct values from some oridnal typeb
