@@ -24,16 +24,25 @@ code generation- specific to each hw architecture
 
 parsers: top down- built from root to leaves, bottom up- built from leaves to root
 recursive-descent parser- based on BNF(backus-naur form)description of the syntax language
+two distinct grammar characteristics prevent construction of rdp-left recursion 
 LL algorithms- parsing table and recursive-descent, work on the same subset of all context free grammars
-direct left recursion- left recursion, can be eliminated
-pairwise dijointness test- rquires the ability to compute a set based on the RHS of a nonterminal symbol
+direct left recursion- left recursion, can be eliminated, big problem could keep calling itself
+pairwise dijointness test- requires the ability to compute a set based on the RHS of a nonterminal symbol
 left factoring- solves the problem of the pair-wise disjointness test
+handle- the correct RHS, right hand side
 shift-reduce algorithms- bottom up parsers, moves input(tokens) onto the parser's stack, reduce action replaces the handle(RHS) on top
 	of the stack by its LHS
+LL top down-  first l specifies a left-to-right scan of input, second specifies leftmost derivation
+writing top down is easier- but not always used because recursion makes it go in an infinite loop
+
+
 LR parsers- can be built for all programming languages, detect syntax errors as soon as it is possible in a left right scan,
 	LR grammars is a superset of the class arsable by LL parsers- many left recrusive grammars are LR, but none are LL
 hard to produce by hand
-	
+LR bottom up, left to right, right most derivation
+
+original LR algorithm was designed by Donald Knuth, 1965 - created LaTex 
+
 need to write assembly language by hand to optimize, no longer done- compilers too good
 
 How to write a compiler- by hand recursive descent, or a with a 

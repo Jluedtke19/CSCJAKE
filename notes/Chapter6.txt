@@ -11,6 +11,11 @@ not primitive - pascal, c and c++
 
 string length options - static-ada, cobol | limited dynamic length-c and c++ 
 	length indicated by null character, dynamic
+
+evaluation of character string types- aid to writablity, dynamic length isn't worth
+implementation- static length-compile time descriptor
+	limited dynamic length-may need a run-time descriptor for length
+	dynamic length- need run time descriptor
 	
 Ordinal types- one in which the range of possible values can be easily associated 
 	with the set of positive integers
@@ -20,6 +25,13 @@ Ordinal types- one in which the range of possible values can be easily associate
 arrays- homogeneous data which individual elemnts are identified by their position relative to the first
 	four types- static, fixed stack dynamic- range is bound, storage not really, stack-dynamic- range and storage dynanmic,
 	but fixed from then on heap-dynamic- subscript range and storage bindings are dynamic
-	
+
+array opeerations- slices- substructure of an array nothing more than a reference mechanism	
+
 Associative Arrays- unordered collection of data elements indexed by an equal number of values called keys
 Sets- a set is a type of variable that can store unordered collections of distinct values from some oridnal typeb
+
+records- record is a possibly heterogeneous aggregate of data delemnts which elements are identified by names
+unions- union is a type whose variables are allowed to store different type values at different times during execution
+
+pointers - pointer type is a type in which the range of values consists of memory addresses and a special value

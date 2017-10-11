@@ -31,7 +31,8 @@ variables by lifetime-
 	stack-dynamic- when declaration statements are used, good for recurion, overhead is bad though
 	explicit heap-dynamic- allocated and deallocated by explicit directives
 		referenced through pointers and references, dyanmic storage, but ineffieicient
-	implicit heap-dyanmic- allocation and deallocation by assignment, variables, flexible, but inefficient and loss of error detection
+	implicit heap-dyanmic- allocation and deallocation by assignment, variables, flexible, 
+	but inefficient and loss of error detection
 	
 type checking - ensuring that operands of an operator are comapitble
 	A type error is the application of an operator to an operand of an inappropriate type
