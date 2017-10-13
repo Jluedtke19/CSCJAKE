@@ -2,7 +2,9 @@ Primitive data types- integer, exact reflection of the harward
 	floating point- model real numbers
 	decimal- stores fixed number of decimal digits, accurate but wastes memory
 	boolean- can be bits, but implemented as bytes
-	
+
+	8 primitive data types in java- boolean, float, double, char, byte, short, int, long
+
 Character string types- values are sequence of characters
 	design issues - is it primitive or special, is length of objects static or dynamic
 
@@ -25,6 +27,10 @@ Ordinal types- one in which the range of possible values can be easily associate
 arrays- homogeneous data which individual elemnts are identified by their position relative to the first
 	four types- static, fixed stack dynamic- range is bound, storage not really, stack-dynamic- range and storage dynanmic,
 	but fixed from then on heap-dynamic- subscript range and storage bindings are dynamic
+
+some languages require them to be the same type
+
+how are multi-dimentional arrays stored- column by column or row by row
 
 array opeerations- slices- substructure of an array nothing more than a reference mechanism	
 
