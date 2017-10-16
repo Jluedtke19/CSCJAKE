@@ -1,2 +1,15 @@
 Operators- + - * /- unary- single operand, binary- two operands, ternary- three operands
-
+operation precendence rules - define the order in which "adjacent" operators of different precedence levels are evaluated
+operator associativity rules- define order in which operators with same precednece are evaluated
+functional side effects- when a function chagnes a two-way parameter or a nonlocal variable
+	problem- when a function referenced in an expression alters another operand of the expression
+		for a parameter change
+	solution-write language that doesn't allow functional side effects-
+		-writt language definition to demand operand evaluations order be fixed
+Operator Overloading- a case of polymorhpism, where different operators have iffernet implementations depending on arguments,
+	some is common(int and float) 	
+Errors in Expressions- caused by limitations of arithmetic, limitations of computer arithmetic
+	often ignored by run-time system
+Short Circuit Evaluation- semantics of some boolean operators in some languages, where second argument is excuted 
+	only if the first does not determine the value of the expression
+Mixed-Mode assignment- allow to mix variable types in a expression, e.g doubles and ints, int is converted to double.
