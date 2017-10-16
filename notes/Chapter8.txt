@@ -1,0 +1,4 @@
+formal parameter- the name you give a method when you define it
+actual paramater- the name you give a method when you use it
+Böhm and Jacopini- theoretical result that only sequence, selection, and pretest 
+	logical loops are absolutely required to express computations 
