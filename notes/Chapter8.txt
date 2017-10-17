@@ -2,3 +2,15 @@ formal parameter- the name you give a method when you define it
 actual paramater- the name you give a method when you use it
 Böhm and Jacopini- theoretical result that only sequence, selection, and pretest 
 	logical loops are absolutely required to express computations 
+block- a compound statement that can define a new scope
+control statements- to make computations in programs flexible and powerful selecting among alternative 
+	control flow paths and some means of causing the repeated execution of statements or sequencs of statements
+control structure- control statement and collection of statements controlled
+multiple-selection- allows the selection of one of any number of statements or groups
+iterative statement- one that causes a statement or collection of statements to be executed
+unconditional branch statement- transfers execution control to a specified location in a program
+Counter-Controlled Loops- looop var can be integer real or double
+	loop var always has its last value
+	loop var cannot be change in the loop, only parameters because they are evaluated only once
+logically-controlled loops- pretest or postest,some languages have one or both
+Guarded commands- support a new programming metholodology
