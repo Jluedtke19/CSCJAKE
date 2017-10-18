@@ -1,0 +1,34 @@
+Scala is a type-safe JVM language that incorporates both object oriented 
+	and functional programming into an extremely concise, logical, and
+	extraordinarily powerful language
+created to make a better java- more simple than java-
+helps solve problems in an elegant way
+ apply many functional constructs to object oriented designs, the very 
+	powerful type system
+solves real issues, twitter uses it
+LinkedIn.
+Twitter.
+Foursquare.
+Netflix.
+Tumblr
+ Scala code is concise, yet maintainable.  Scala is byte-code compatible 
+ with Java and can use virtually all Java libraries and tools.  Scala is fast.  
+Scala code is easy to maintain.
+best all purpose programming language
+
+
+every value is an object
+functional- every function is a value
+high order functions are function with a parameter or return type that is a function
+method parameters can be given default values(arguments are optional)
+defintions of functions can be nested
+pattern matching-better verions of switch statement
+	a  match has a value
+	can match on type,
+	underscore denotes default case
+any method with a single paramter can be used as a infix operator
+multiple assignments allowed
+inferred or explicit types 
+cannot re-assign to value
+can have a block that has a value, based on last operation
+
