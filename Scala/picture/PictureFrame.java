@@ -14,7 +14,7 @@ public class PictureFrame extends JFrame {
   } // PictureFrame()
 
   public static void main( String [] args ) {
-
+    System.out.println("da");
     PictureFrame pf = new PictureFrame();
 
   } // main( String [] )

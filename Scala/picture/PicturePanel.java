@@ -32,14 +32,15 @@ public class PicturePanel extends JPanel {
     transform.concatenate( scale );
     transform.concatenate( translate );
 
-    int numberOfPoints = 12;
+    int numberOfPoints = 3;
     double radius = 2.0/(1.0 + Math.sqrt(5.0));
 
     double [] x = new double[numberOfPoints];
     double [] y = new double[numberOfPoints];
 
     Vertex [] vertices = new Vertex[numberOfPoints];
-    
+
+
     for( int i = 0; i < numberOfPoints; i++ ) {
       double fraction = ((double) i)/numberOfPoints;
 
@@ -51,9 +52,23 @@ public class PicturePanel extends JPanel {
       vertices[i] = new Vertex( x[i], y[i] );
     } // for
 
+    Triangle striangle = new Triangle(vertices[0], vertices[1], vertices[0]);
+    Triangle midtriangle = new Triangle(striangle.getmid1(), striangle.getmid2(), striangle.getmid0());
+    //while(striangle.len() > .1){
+
+
+    //}
+    Ellipse2D dot0 = createDot( midtriangle.fe() );
+    g2D.fill( transform.createTransformedShape(dot0) );
+
+    Ellipse2D dot1 = createDot( midtriangle.se() );
+    g2D.fill( transform.createTransformedShape(dot1) );
+
+    Ellipse2D dot2 = createDot( midtriangle.te() );
+    g2D.fill( transform.createTransformedShape(dot2) );
+
     for( int i = 0; i < numberOfPoints; i++ ) {
       Ellipse2D dot = createDot( vertices[i] );
-
       g2D.fill( transform.createTransformedShape(dot) );
     } // for
 
@@ -93,6 +108,11 @@ public class PicturePanel extends JPanel {
     Line2D segment = new Line2D.Double( x0, y0, x1, y1 );
 
     return segment;
-  } // createLineSegment( Edge )
+  }// createLineSegment( Edge )
+  public static void main( String [] args ) {
+    System.out.println("da");
+
+
+  }
 
 } // PicturePanel
