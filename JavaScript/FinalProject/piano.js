@@ -14,36 +14,42 @@
   function soundId(id) {
     return 'sound-' + id;
   };
+
   //get the note
   function sound(id) {
     var it = document.getElementById(soundId(id));
     return it;
   };
+
   //return key that is played based on the keyboard key array
   function keyup(ckey) {
     var location = keyboardkeys.indexOf(ckey);
     return keys[(keys.indexOf(ckey) + location)];
   };
+
   //need two functions for play and stop
   function keydown(code) {
     return keyup(code);
   };
+
   //plays the audio of the note
   function press(key) {
     var audio = sound(key);
-    //if depressed can't press it
+    //if pressed doesn't play mutliple
     if (depressed[key]) {
       return;
-    }//remove keys from pressed
+    }//remove keys from pressed, stops previous same note from bieng played
     clearInterval(pressed[key]);
-    audio.pause();
+    //audio.pause();
     audio.volume = 1.0;
+    //how long its been playing
     if (audio.readyState >= 2) {
       audio.currentTime = 0;
       audio.play();
       depressed[key] = true;
     }
   };
+
   //stop key from playing, remove from array
   function stop(key) {
     var audio = sound(key);
@@ -52,10 +58,12 @@
       audio.pause();
     };
   };
+
   //monitors what key is pressed(key down) then plays it
   jQuery(document).keydown(function(event) {
     press(keydown(event.which));
   });
+  
   //stops note when keybord goes up
   jQuery(document).keyup(function(event) {
       Object.keys(depressed).forEach(function(key) {
