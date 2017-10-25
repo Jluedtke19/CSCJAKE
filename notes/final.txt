@@ -1,0 +1,47 @@
+1)b- is the correct answer, 
+	a) is from more ram and stronger cpus
+
+2) It did not happen becuase computers got more powerful and
+	the clock speed increased. Don't need concurrency because are computers
+	aren't weak
+
+3) Scalable meaans that a algorithm uses more computer processing power 
+	that more it needs
+
+4)Unit level and program level
+
+5)Single instruction multiple data, Multiple instruction multiple data
+	example single for multiplying two arrays
+	
+6)race condition is when a device attempts to preform two or more operations at the same time but because
+	of the nature of the device the operations must be done in the proper sequence to be done correctly
+	the output with two processes it determined with coincidences in timing we can't control
+	
+7)Multi-process synchronization problem, two processes producer and consumer share a buffer as a queue
+	producer generates data and puts in buffer, consumer uses it one piece at the time the problem is to
+	make sure the producer won't try to add data into the buffer it full and the consumer won't remove data from 
+	an empty buffer
+
+8) thread- a program that is running
+	first way is the extend the Thread class and override the run method with the codd you want to execute
+	second way is to pass an implementation of the runnable interface ot the construcotr of thread
+	
+9)Semaphores are a way to coordinate two processes/threads
+
+10)
+
+11)Exception- when something happens in a program that isn't expected
+	A disadvantage would be that it slows down computation because it's always checking
+	Its advangtage is that the programmer doesn't have to put in exception code
+	
+12)Throws is defining the method that might see an exception and passes the responsiblity to the function that called it
+	throw is usd inside method body to invoke an exception and throws clause is used in method declaration
+	
+13)
+
+14) Assertion statements
+
+15)Why is programming not predictable like punch cards, 
+	You can interact with the program while running, click menus, windows closing, mouse clicking
+	How does java handle events? Have event listener interfaces, listener interface, have to write code 
+	that implements listener interface

@@ -32,6 +32,8 @@ public class PicturePanel extends JPanel {
     transform.concatenate( scale );
     transform.concatenate( translate );
 
+    //Recursion s = new Recursion;
+    /*
     int numberOfPoints = 3;
     double radius = 2.0/(1.0 + Math.sqrt(5.0));
 
@@ -51,6 +53,7 @@ public class PicturePanel extends JPanel {
 
       vertices[i] = new Vertex( x[i], y[i] );
     } // for
+    */
 
     Triangle striangle = new Triangle(vertices[0], vertices[1], vertices[0]);
     Triangle midtriangle = new Triangle(striangle.getmid1(), striangle.getmid2(), striangle.getmid0());
@@ -58,6 +61,7 @@ public class PicturePanel extends JPanel {
 
 
     //}
+    /**
     Ellipse2D dot0 = createDot( midtriangle.fe() );
     g2D.fill( transform.createTransformedShape(dot0) );
 
@@ -66,6 +70,7 @@ public class PicturePanel extends JPanel {
 
     Ellipse2D dot2 = createDot( midtriangle.te() );
     g2D.fill( transform.createTransformedShape(dot2) );
+     **/
 
     for( int i = 0; i < numberOfPoints; i++ ) {
       Ellipse2D dot = createDot( vertices[i] );
@@ -109,10 +114,5 @@ public class PicturePanel extends JPanel {
 
     return segment;
   }// createLineSegment( Edge )
-  public static void main( String [] args ) {
-    System.out.println("da");
-
-
-  }
 
 } // PicturePanel
